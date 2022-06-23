@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+#container {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    height: 500px;
+    gap: 20px;
+}
+
+.listitems {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 auto;
+    display: flex;
+    justify-content: center;
+}
