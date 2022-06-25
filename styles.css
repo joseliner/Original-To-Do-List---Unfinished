@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lora', serif;
+    background-color: #e28743;
 }
 
 h1 {
@@ -19,18 +20,47 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid black;
+    /* border: 1px solid #fff; */
     height: 500px;
     gap: 20px;
 }
 
-
-/* kjshjksd */
-
-.listitems {
+label {
     margin: 0 auto;
     width: 100%;
     padding: 0 auto;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+}
+
+
+/* checkbox {
+    text-align: center;
+}
+
+checkbox {
+    margin: 0px 0px 0px 0px;
+} */
+
+
+/* .check input {
+    margin: 0px 20px 0px 3px;
+} */
+
+
+/* .listitems {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 auto;
+    display: flex;
+    justify-content: center;
+} */
+
+#input-field {
+    background-color: #fff;
+}
+
+#addbtn {
+    background-color: #fff;
 }
