@@ -3,26 +3,46 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lora', serif;
-    background-color: #abdbe3;
 }
 
 h1 {
     text-align: center;
 }
 
+body {
+    background: #00B4DB;
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+}
+
 form {
     text-align: center;
 }
 
+#addbtn {
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+}
+
 #container {
+    background-color: #abdbe3;
     align-items: center;
     align-content: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: 1px solid #fff; */
     height: 500px;
+    width: 22%;
     gap: 20px;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 
 label {
@@ -31,7 +51,6 @@ label {
     padding: 0 auto;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
 }
 
 
@@ -71,20 +90,20 @@ label {
     height: 25px;
     width: 25px;
     background-color: #fff;
-    ;
+    border-radius: 0.2rem;
 }
 
 
 /* On mouse-over, add a grey background color */
 
-.container:hover input~.checkmark {
-    background-color: #ccc;
+.check:hover input~.checkmark {
+    background-color: #fff;
 }
 
 
 /* When the checkbox is checked, add a blue background */
 
-.container input:checked~.checkmark {
+.check input:checked~.checkmark {
     background-color: #fff;
 }
 
@@ -100,19 +119,19 @@ label {
 
 /* Show the checkmark when checked */
 
-.container input:checked~.checkmark:after {
+.check input:checked~.checkmark:after {
     display: block;
 }
 
 
 /* Style the checkmark/indicator */
 
-.container .checkmark:after {
+.check .checkmark:after {
     left: 9px;
     top: 5px;
     width: 5px;
     height: 10px;
-    border: solid white;
+    border: solid black;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
