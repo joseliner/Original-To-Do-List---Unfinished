@@ -43,10 +43,16 @@ checkbox {
     margin: 0px 0px 0px 0px;
 } */
 
+span.checkmark {
+    display: flex;
+    margin: 0 20px 0px;
+    padding: 30px;
+}
 
-/* .check input {
-    margin: 0px 20px 0px 3px;
-} */
+label.check {
+    display: flex;
+    margin: 0 20px 0px;
+}
 
 
 /* .listitems {
