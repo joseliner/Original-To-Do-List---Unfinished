@@ -147,10 +147,18 @@ label {
     justify-content: center;
 } */
 
+
+/* form input */
+
 #input-field {
     background-color: #fff;
     color: black;
 }
+
+
+/* #input-field:focus {
+    outline: red;
+} */
 
 #addbtn {
     background-color: #fff;
