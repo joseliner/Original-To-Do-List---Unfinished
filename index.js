@@ -31,4 +31,4 @@ addbtn.addEventListener('click', function() {
     listitems.appendChild(paragraph);
 })
 
-// omg
+// idk what im doing rn ughhhh
