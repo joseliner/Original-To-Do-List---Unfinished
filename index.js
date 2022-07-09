@@ -20,15 +20,27 @@
 // <span class="checkmark"></span>
 // </label>`)
 
-let addbtn = document.getElementById('addbtn');
+let addTodo = document.getElementById('addbtn');
 let listitems = document.getElementById('listitems');
-let inputField = document.getElementById(inputfield);
+let inputField = document.getElementById('input-field');
 
-addbtn.addEventListener('click', function() {
-    let paragraph = document.createElement('p')
-    paragraph.classList.add('.check input');
-    paragraph.innerText = inputField.value
-    listitems.appendChild(paragraph);
-})
 
-// idk what im doing rn ughhhh
+if (inputField) {
+    const typeTodo = inputField.addEventListener('keydown', (event) => {
+        const newTodo = event.target.value
+
+        addTodo.addEventListener('click', function(event) {
+            event.preventDefault()
+                // passed down new todo from above... now set up logic to store/send this to the html browser 
+            console.log(newTodo)
+                // let paragraph = document.createElement('p')
+                // paragraph.classList.add('.check input');
+                // paragraph.innerText = inputField.value
+                // listitems.appendChild(paragraph);
+        })
+
+
+    })
+}
+
+// append to the check box make it add to the list when hit add or look up jquery append or json
