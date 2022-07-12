@@ -25,22 +25,60 @@ let listitems = document.getElementById('listitems');
 let inputField = document.getElementById('input-field');
 
 
-if (inputField) {
-    const typeTodo = inputField.addEventListener('keydown', (event) => {
-        const newTodo = event.target.value
-
-        addTodo.addEventListener('click', function(event) {
-            event.preventDefault()
-                // passed down new todo from above... now set up logic to store/send this to the html browser 
-            console.log(newTodo)
-                // let paragraph = document.createElement('p')
-                // paragraph.classList.add('.check input');
-                // paragraph.innerText = inputField.value
-                // listitems.appendChild(paragraph);
-        })
+// if (inputField) {
+//     const typeTodo = inputField.addEventListener('change', (inputEvent) => {
+//                 let newTodo = inputEvent.target.value
+//                 inputEvent.stopPropagation()
+//                 inputEvent.preventDefault()
 
 
-    })
-}
+//         addTodo.addEventListener('click', function(btnEvent) {
+//             btnEvent.stopPropagation()
+//             btnEvent.preventDefault()
 
-// append to the check box make it add to the list when hit add or look up jquery append or json
+//             console.log('todo', newTodo)
+//             console.log('clicked', btnEvent.target.value)
+
+
+
+//             $('ul').append(`<label class="check">test
+//                                     <input type="checkbox" checked="checked">
+//                                     <span class="checkmark"></span>
+//                                 </label>`);
+
+//             typeTodo.removeEventListener('reset')
+//                 // passed down new todo from above... now set up logic to store/send this to the html browser 
+//                 // let paragraph = document.createElement('p')
+//                 // paragraph.classList.add('.check input');
+//                 // paragraph.innerText = inputField.value
+//                 // listitems.appendChild(paragraph);
+//         })
+
+
+//     })
+// }
+
+
+let givenToDos = [
+    'todo1',
+    'todo2',
+    'todo3',
+    'todo4',
+];
+
+$(document).ready(function() {
+    for (let i = 0; i < givenToDos.length; i++) {
+        $('#to-do-list').append('<div class="to-do-item" ><strong>' + givenToDos[i] + '</strong><button class="completed">COMPLETED</button></div>');
+    }
+
+    $('#submit').on('click', function(e) {
+        e.preventDefault();
+        const $input = $('#input-box');
+        const $newTodo = $input.val();
+        givenToDos.push($newTodo);
+
+        $('#to-do-list').append('<div class="to-do-item" ><strong>' + $newTodo + '</strong><button class="completed">COMPLETED</button></div>');
+        $input.val('');
+    });
+
+});
