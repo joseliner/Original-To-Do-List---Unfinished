@@ -60,15 +60,15 @@ let inputField = document.getElementById('input-field');
 
 
 let givenToDos = [
-    'todo1',
-    'todo2',
-    'todo3',
-    'todo4',
+    'Food shop',
+    'Dog grooming',
+    'Laundry',
+    'Bank run',
 ];
 
 $(document).ready(function() {
     for (let i = 0; i < givenToDos.length; i++) {
-        $('#to-do-list').append('<div class="to-do-item" ><strong>' + givenToDos[i] + '</strong><button class="completed">COMPLETED</button></div>');
+        $('#to-do-list').append('<div class="to-do-item" ><button class="completed">DONE</button> <strong>' + givenToDos[i] + '</strong></div>');
     }
 
     $('#submit').on('click', function(e) {
@@ -77,7 +77,7 @@ $(document).ready(function() {
         const $newTodo = $input.val();
         givenToDos.push($newTodo);
 
-        $('#to-do-list').append('<div class="to-do-item" ><strong>' + $newTodo + '</strong><button class="completed">COMPLETED</button></div>');
+        $('#to-do-list').append('<div class="to-do-item" ><button class="completed">DONE</button> <strong>' + $newTodo + '</strong></div>');
         $input.val('');
     });
 

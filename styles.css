@@ -1,8 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+#input-box {
+    /* margin: 20px auto; */
+    padding: 0 auto;
+}
+
+h1 {
+    margin-top: 4rem;
+}
+
+body {
+    text-align: center;
+    background: #00B4DB;
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+}
+
 .to-do-item {
     line-height: 25px;
-    margin-top: 10px;
+    margin-bottom: 3rem;
+    margin: 0 auto;
+    align-items: center;
 }
 
 .to-do-item button {
     margin-left: 5px;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    padding: 0.1rem 0.2rem;
+    font-size: 12px;
+}
+
+#submit {
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-bottom: 4rem;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+#container {
+    background-color: #abdbe3;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 22%;
+    gap: 20px;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
